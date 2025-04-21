@@ -1,0 +1,7 @@
+# Bing-Agent
+
+- LLM Api调用，包括chat、embedding
+- 各类Agent
+    * ChatAgent: 支持会话上下文的Agent
+    * ToolAgent: 支持Tool调用的Agent
+    * SearchAgent: 支持检索的agent
