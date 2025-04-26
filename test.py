@@ -1,10 +1,11 @@
 import os
 # from src.llm import basic_model, reasoning_model, EmbeddingModel
 
-from src.agents.search_agent import search_by_pdf, search_by_web, graph, search_by_url_agent
+# from src.agents.search_agent import search_by_pdf, search_by_web, graph, search_by_url_agent
 from src.utils.util import show_graph
 # from src.agents.classify_agent import classify_text
 from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
+from src.shot.few_shot import few_shot
 # from src.agents.chat_agent import chat_with_agent, chat_with_msgs, trimmed_language_demo
 
 # from src.agents.tool_agent import chat_with_agent, search_by_input, chat_with_msgs
@@ -39,9 +40,11 @@ if __name__ == '__main__':
     #     "详细介绍下planner的作用",
     #     debug=False,
     # )
-    query = (
-        "LangManus分为几个组件?"
-        "介绍下LangManus的planner"
-    )
-    search_by_url_agent("https://draymonders.github.io/cs-life/machine-learn/agent/langmanus/", query, "123")
+    # query = (
+    #     "LangManus分为几个组件?"
+    #     "介绍下LangManus的planner"
+    # )
+    # search_by_url_agent("https://draymonders.github.io/cs-life/machine-learn/agent/langmanus/", query, "123")
     # show_graph("./datas/rag_graph.png", graph=graph)
+
+    few_shot()
