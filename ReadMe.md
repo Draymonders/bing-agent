@@ -8,8 +8,8 @@ NLP的历史发展，从n-gram => word2vec => nplm => seq2seq => transformer => 
 - 词向量: skip-gram、cbow、word2vec
 - 短句: nplm
 - 长句: rnn、seq2seq
-- 段落：transformer
-- 大模型: GPT
+- 段落：transformer、gpt
+- 大语言模型: ChatGPT
 
 ## LLM
 

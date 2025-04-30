@@ -1,2 +1,4 @@
 /datas/*
 __pycache__/*
+*.pth
+# *.csv
